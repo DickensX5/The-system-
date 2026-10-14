@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "THE SYSTEM",
+  "short_name": "THE SYSTEM",
+  "description": "An offline-first progression system: four quests, one overall level. Financial, Physique, Intelligence and Romance.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#05060a",
+  "theme_color": "#05060a",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["productivity", "lifestyle", "games"],
+  "icons": [
+    { "src": "assets/branding/app-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/branding/app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/branding/app-icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/branding/app-icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/branding/app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "Quests", "short_name": "Quests", "url": "./index.html#/quests", "icons": [{ "src": "assets/branding/app-icon-192.png", "sizes": "192x192" }] },
+    { "name": "Inbox", "short_name": "Inbox", "url": "./index.html#/inbox", "icons": [{ "src": "assets/branding/app-icon-192.png", "sizes": "192x192" }] }
+  ]
+}

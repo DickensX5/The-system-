@@ -1,0 +1,15 @@
+:root {
+  --bg: #05060a; --bg2: #090b13; --panel: #0d1019; --panel2: #121626; --panel3: #181d31;
+  --line: #1f2540; --line2: #2b3358; --text: #e9ebf8; --muted: #8e94b3; --faint: #5a6080;
+  --accent: #7b6dff; --accent2: #4aa8ff; --accent-glow: rgba(123,109,255,.35);
+  --ok: #19c37d; --warn: #ffb020; --bad: #ff4d6d;
+  --financial: #19c37d; --physique: #ff6a2b; --intelligence: #3d7bff; --romance: #e0214a;
+  --common: #9aa0b8; --uncommon: #3ddc97; --rare: #4aa8ff; --epic: #b46bff; --legendary: #ffb020; --mythic: #ff4d9d;
+  --r: 14px; --r-sm: 9px; --cut: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", "Roboto Mono", Menlo, Consolas, monospace;
+  --safe-t: env(safe-area-inset-top, 0px); --safe-b: env(safe-area-inset-bottom, 0px);
+  --nav-h: 62px; --top-h: 54px;
+  --ease: cubic-bezier(.2,.8,.2,1);
+}
+@media (prefers-reduced-motion: reduce) { :root { --motion: 0; } }

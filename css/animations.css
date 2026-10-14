@@ -1,0 +1,18 @@
+@keyframes sheet-up { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes toast-in { from { transform: translateY(-14px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes pop { 0% { transform: scale(.6); opacity: 0; } 60% { transform: scale(1.08); opacity: 1; } 100% { transform: scale(1); } }
+@keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 0 0 var(--accent-glow); } 50% { box-shadow: 0 0 22px 4px var(--accent-glow); } }
+@keyframes shimmer { from { background-position: -200% 0; } to { background-position: 200% 0; } }
+@keyframes shake { 10%, 90% { transform: translateX(-2px); } 30%, 70% { transform: translateX(4px); } 50% { transform: translateX(-4px); } }
+@keyframes rise-in { from { transform: translateY(14px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes ray-spin { to { transform: rotate(360deg); } }
+@keyframes float-up { 0% { transform: translateY(0) scale(.8); opacity: 0; } 20% { opacity: 1; } 100% { transform: translateY(-120px) scale(1.1); opacity: 0; } }
+.rise > * { animation: rise-in .45s var(--ease) both; } .rise > *:nth-child(2) { animation-delay: .05s; } .rise > *:nth-child(3) { animation-delay: .1s; } .rise > *:nth-child(4) { animation-delay: .15s; } .rise > *:nth-child(n+5) { animation-delay: .2s; }
+.pulse { animation: pulse-glow 2.4s ease-in-out infinite; } .shake { animation: shake .4s; } .pop { animation: pop .45s var(--ease); }
+.levelup { position: fixed; inset: 0; z-index: 80; display: grid; place-items: center; background: radial-gradient(circle at center, rgba(123,109,255,.35), rgba(2,3,8,.92) 70%); text-align: center; padding: 24px; }
+.levelup .rays { position: absolute; width: 120vmax; height: 120vmax; background: repeating-conic-gradient(from 0deg, rgba(255,255,255,.06) 0 6deg, transparent 6deg 18deg); animation: ray-spin 24s linear infinite; mask-image: radial-gradient(circle, #000 0 20%, transparent 60%); }
+.levelup .box { position: relative; animation: pop .6s var(--ease); }
+.levelup .lv { font-size: 84px; font-weight: 900; line-height: 1; background: linear-gradient(180deg, #fff, #9a8fff); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 0 20px var(--accent)); }
+.levelup .tag { letter-spacing: .5em; font-size: 12px; color: var(--accent2); text-transform: uppercase; padding-left: .5em; }
+.skeleton { background: linear-gradient(90deg, var(--panel2) 25%, var(--panel3) 50%, var(--panel2) 75%); background-size: 200% 100%; animation: shimmer 1.4s infinite; border-radius: 8px; }
+.opening { animation: shake .5s 2; }

@@ -1,0 +1,18 @@
+.cal { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.cal .dow { text-align: center; font-size: 10.5px; color: var(--faint); letter-spacing: .1em; padding: 4px 0; }
+.cal button { aspect-ratio: 1; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--text); font: 600 13px var(--mono); position: relative; padding: 0; }
+.cal button.blank { visibility: hidden; }
+.cal button.s-earned { background: #0b2a1d; border-color: #1e6a4a; } .cal button.s-rest { background: #0f1220; color: var(--faint); border-style: dashed; } .cal button.s-missed { background: #2a0f19; border-color: #7a2038; } .cal button.s-penalized { background: #3a1220; border-color: var(--bad); } .cal button.s-explained { background: #1a1a08; border-color: #6a6a18; } .cal button.s-today { border-color: var(--accent2); box-shadow: 0 0 10px -2px var(--accent2); } .cal button.s-untracked { opacity: .35; }
+.legend { display: flex; flex-wrap: wrap; gap: 10px; font-size: 11.5px; color: var(--muted); } .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+.ex { display: flex; flex-direction: column; gap: 8px; } .ex .head { display: flex; justify-content: space-between; align-items: center; } .ex.done { border-color: #1e6a4a; } .ex.done .head b { color: var(--ok); }
+.qbtn-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.question { display: flex; flex-direction: column; gap: 8px; } .question.solved { opacity: .65; } .question .opts { display: grid; gap: 8px; }
+.opt { text-align: left; padding: 11px 12px; background: var(--panel); border: 1px solid var(--line2); border-radius: 10px; color: var(--text); min-height: 44px; } .opt:active { background: var(--panel3); } .opt.right { border-color: var(--ok); background: #0b2018; } .opt.wrong { border-color: var(--bad); background: #2a0f19; }
+.passage { padding: 10px 12px; background: #080a14; border-left: 3px solid var(--intelligence); border-radius: 6px; font-size: 14px; color: var(--muted); }
+.hearts { display: flex; gap: 6px; align-items: center; }
+.heartbtn { width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--romance); background: #1a0a12; color: var(--romance); display: grid; place-items: center; flex: none; } .heartbtn svg { width: 28px; height: 28px; } .heartbtn:active { transform: scale(.92); }
+.heartbtn.done { background: var(--romance); color: #fff; } .heartbtn.broken { border-color: var(--faint); color: var(--faint); background: #0d0f18; }
+.dungeon { border: 1px solid #7a2038; background: radial-gradient(circle at 50% 0, #3a0f1d, #12070d 70%); border-radius: var(--r); padding: 16px; }
+.timer-big { font: 800 34px var(--mono); text-align: center; letter-spacing: .08em; }
+.photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; } .photo-grid button { aspect-ratio: 1; padding: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--panel); } .photo-grid img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.summon-vis { display: flex; align-items: center; justify-content: space-between; gap: 6px; } .summon-vis .node { flex: 1; text-align: center; padding: 10px 4px; border-radius: 10px; border: 1px solid var(--line2); background: var(--panel); } .summon-vis .node b { display: block; font: 800 18px var(--mono); }

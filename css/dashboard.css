@@ -1,0 +1,12 @@
+.hero { display: flex; gap: 14px; align-items: center; }
+.hero .emblem { width: 76px; height: 76px; flex: none; display: grid; place-items: center; border-radius: 18px; background: radial-gradient(circle, #1e1a4d, #0a0c18); border: 1px solid var(--line2); position: relative; color: var(--accent2); }
+.hero .emblem svg { width: 36px; height: 36px; }
+.hero .emblem .lvl { position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); background: var(--accent); color: #fff; font: 800 12px var(--mono); padding: 2px 8px; border-radius: 10px; box-shadow: 0 0 12px var(--accent-glow); }
+.hero .name { font-size: 20px; font-weight: 800; letter-spacing: .04em; } .rank { font-size: 12px; letter-spacing: .24em; text-transform: uppercase; color: var(--accent2); }
+.questcard { display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: inherit; }
+.questcard .head { display: flex; align-items: center; gap: 8px; } .questcard .head svg { width: 22px; height: 22px; }
+.questcard .lv { font: 800 22px var(--mono); }
+.questcard[data-q="financial"] .head svg { color: var(--financial); } .questcard[data-q="physique"] .head svg { color: var(--physique); } .questcard[data-q="intelligence"] .head svg { color: var(--intelligence); } .questcard[data-q="romance"] .head svg { color: var(--romance); }
+.questcard .lock-flag { color: var(--bad); font-size: 11px; display: flex; gap: 4px; align-items: center; }
+.stat { text-align: center; padding: 10px 4px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; } .stat b { display: block; font: 800 18px var(--mono); } .stat span { font-size: 10.5px; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+.claimbar { display: flex; gap: 10px; align-items: center; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--legendary); background: linear-gradient(90deg, #2a1d06, #14110a); text-decoration: none; color: inherit; animation: pulse-glow 2.6s infinite; --accent-glow: rgba(255,176,32,.35); }
